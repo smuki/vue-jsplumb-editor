@@ -1,26 +1,5 @@
 <template>
   <el-container class="indexWrap">
-    <el-aside width="48px"
-              class="fy_el-aside">
-      <el-menu default-active="2"
-               background-color="transparent"
-               text-color="#9aaeba"
-               active-text-color="#9aaeba"
-               :collapse="true">
-        <el-menu-item index="1">
-          <i class="el-icon-s-home"></i>
-          <span slot="title">首页</span>
-        </el-menu-item>
-        <el-menu-item index="2">
-          <i class="el-icon-magic-stick"></i>
-          <span slot="title">设计</span>
-        </el-menu-item>
-        <el-menu-item index="3">
-          <i class="el-icon-setting"></i>
-          <span slot="title">设置</span>
-        </el-menu-item>
-      </el-menu>
-    </el-aside>
     <el-main>
       <FlowChart></FlowChart>
     </el-main>
