@@ -353,8 +353,8 @@ function addNodeByExtraData(nodeData, nodeEdgesData, nodeEndpointsData) {
  * @description 根据给定的node数据生成node节点
  */
 function addNodesByData() {
-  const { nodes } = model.getData();
-  nodes.forEach((n) => {
+  const { activities } = model.getData();
+  activities.forEach((n) => {
     addNodeByData(n);
   });
 }

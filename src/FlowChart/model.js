@@ -1,5 +1,5 @@
 let FlowChartJson = {
-  nodes: [],
+  activities: [],
   endpoints: [],
   edges: [],
   head: '',
@@ -19,15 +19,15 @@ export default {
   },
 
   addNode(nodeData) {
-    FlowChartJson.nodes.push(nodeData);
+    FlowChartJson.activities.push(nodeData);
   },
 
   removeNodeByNodeId(nodeId) {
-    FlowChartJson.nodes = FlowChartJson.nodes.filter(node => node.id !== nodeId);
+    FlowChartJson.activities = FlowChartJson.activities.filter(node => node.id !== nodeId);
   },
 
   getNodeDataByNodeId(nodeId) {
-    return FlowChartJson.nodes.find(n => n.id === nodeId);
+    return FlowChartJson.activities.find(n => n.id === nodeId);
   },
 
   addEdge(edge) {
@@ -76,12 +76,12 @@ export default {
   },
 
   changeNodePos(nodeId, newPosition) {
-    const node = FlowChartJson.nodes.find(n => n.id === nodeId);
+    const node = FlowChartJson.activities.find(n => n.id === nodeId);
     node.position = newPosition;
   },
 
   changeNodeValue(nodeId, value) {
-    const node = FlowChartJson.nodes.find(n => n.id === nodeId);
+    const node = FlowChartJson.activities.find(n => n.id === nodeId);
     node.data.value = value;
   },
 

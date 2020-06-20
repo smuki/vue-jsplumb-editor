@@ -2,7 +2,7 @@ const Mock = require('mockjs');
 
 
 Mock.mock('api/getFlowChartData', 'get', () => ({
-  nodes: [
+  activities: [
     {
       id: 'aaa',
       points: {
