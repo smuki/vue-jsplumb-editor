@@ -20,16 +20,6 @@
                :props="defaultProps"></el-tree>
     </el-aside>
     <el-main>
-      <el-container>
-        <el-header height="40px"
-                   class="tabsNav">
-          <el-tabs v-model="activeName"
-                   type="card"
-                   closable>
-            <el-tab-pane name="first">
-              <span slot="label"><i class="el-icon-s-promotion"></i> 我的模型一</span></el-tab-pane>
-          </el-tabs>
-        </el-header>
         <el-container>
           <el-main class="main">
             <div id="mainMenu">
@@ -173,7 +163,6 @@
             </el-container>
           </el-aside>
         </el-container>
-      </el-container>
     </el-main>
   </el-container>
 </template>
