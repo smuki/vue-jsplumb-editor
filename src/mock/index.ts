@@ -152,7 +152,7 @@ Mock.mock('api/getFlowChartData', 'get', () => ({
 
 Mock.mock('api/getMenuData', 'get', () => ([
   {
-    label: '源 / 目标',
+    label: 'Activity',
     id: 'source',
     children: [{
       label: '写数据表',
