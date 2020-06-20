@@ -1,8 +1,6 @@
 <template>
   <el-container class="indexWrap">
-    <el-main>
       <FlowChart></FlowChart>
-    </el-main>
   </el-container>
 </template>
 
